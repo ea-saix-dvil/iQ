@@ -1,4 +1,4 @@
-<img align="center" src="https://drive.google.com/file/d/1om2uw5fXTbMTp3Ze-03hMF5eNmMyj-GZ/view?usp=sharing"/>
+<img align="center" src="https://github.com/ea-saix-dvil/iQ/blob/master/iQ_Logo.png"/>
 
 ---
 
