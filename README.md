@@ -1,4 +1,6 @@
-<img align="center" src="iQ_Logo.png"/>
+<a href="https://github.com/ea-saix-dvil/iQ">
+    <img align="center" src="iQ_Logo.png"/>
+</a>
 
 ---
 
