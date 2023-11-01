@@ -55,19 +55,30 @@ Let's get started.
 
 ## Inititialzation and User Configuration
 
-- [INPUT] User profile --> dict
-    - [INPUT] Explain what you want to learn. --> str: subject_matter
-    - [PROCESS] Manager creates "burndown list"
-        - comprehensive list of granular tasks that will result in subject matter expertise
-        - each task is prioritized
-        - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
-          --> dict(str: task, enum: status (pending, complete)) : burndown_list
-    - [INPUT] How much time do you have right now?  --> user_availability
-    - [PROCESS] Agent creates praxis based on context:
-        - user time selection
-        - next item on "burn down list
-          --> str: user_praxis
+- [INPUT] User profile --> dict{str: user_name, list[str]: expertise_level, list[str]: learning_depth, list[int]: time_in_minutes, list[str]: execute_tool, str: subject_matter}
+  - user_name: your name
+  - expertise_level: Where are you in your journey: beginning, middle, or nearing completion?
+  - learning_depth: How much insight would you like your AI Collaboration Partner to provide: some, a bit more, a lot more?
+  - time_in_minutes: How much time do you have right now?
+  - execute_tool: What would you like to do: Initialize your instruction, Begin a lesson, Conclude a lesson, Configure your User Profile
+  - subject_matter: What do you want to learn? 
+- [PROCESS] Manager creates "burndown list"
+    - comprehensive list of granular tasks that will result in subject-matter expertise
+    - each task is prioritized
+    - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
+      --> dict(str: task, enum: status (pending, complete)) : burndown_list
+- [PROCESS] Agent creates praxis based on context:
+    - User Profile
+    - Next item on "burn down list
+      --> dict(str: task, str: instruction, reinforcement, synehtis output) : praxis
 
 ## The Utility of this approach
 
-- iQ is supported by "living infrastructure".  This template is a starting place from which we encourage the expansion of the prompt library and the tool set to further enhance your learning.  We encourage you to customize your Ikigai Quest so that you can more efficiently and effectively --> Choose your adventure, Learn, Build, and Succeed.  
+- iQ is supported by "living infrastructure as code".  
+- This isn't a template.
+- This is the first step of your journey.  
+- As you learn, your needs, aptitudes and interests will expand.  iQ will expand with you.
+  - iQ offers the fluidity to persistently customize and refine your prompt library and the tool set to enhance your learning.
+  - This is your Ikigai Quest --> 
+    - Choose your adventure
+      - Learn, Build, and Succeed.  
