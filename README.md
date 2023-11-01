@@ -14,6 +14,11 @@
 - Would love your help in shaping this expansive product.
 - Welcome ANYONE who wants to share in this experience
 
+*Our Team:*
+
+- [Adeola A, Product Manager](https://www.linkedin.com/in/adeola-a-ba74b823?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- [Anthem Rukiya J. Wingate, Architect](https://www.linkedin.com/in/anthemrukiya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
 ---
 
 *This is an AfroHacks 2023 Hackathon project in collaboration with IBM*
