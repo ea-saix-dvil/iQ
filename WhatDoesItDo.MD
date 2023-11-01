@@ -33,3 +33,37 @@ Let's get started.
 ## The Inspiration for iQ
 
 > Artificial intelligence (AI) plays a significant role in Neal Stephenson's science fiction novel The Diamond Age: Or, a Young Lady's Illustrated Primer. Set in a future where technology has advanced significantly, one of the most important ways AI is used in the novel is to provide equitable standards of education to characters of marginalized identities. In the book, AI-powered tutors called "primers" are made available to every student regardless of their economic status. These personalized education devices adapt to the individual needs of each student to provide instruction in any subject area, and also create customized stories and simulations to help students learn.  One of the characters in the novel, a young girl named Nell, uses her primer to obtain an expansive education including learning about her cultural identity and feeding her personal curiousity to develop her own unique skills and talents.
+
+## iQ core aims:
+
+1. **Introduction and Setup**:
+    - To facilitate smooth, seamless integration and collaboration between students and AI agents.
+    - To provide a tool that students can use to become experts in their chosen subject matter with the aid of AI.
+    - To create a generic, flexible, and adaptable configuration document that can serve diverse student needs and topics of interest.
+
+2. **Collaboration Process**:
+    - The AI should be able to dynamically adjust its interaction style and depth of response based on user's expertise level (beginner, intermediate, advanced).
+    - The collaboration should be organized into sessions, with each session having a specific aim or learning outcome.
+    - Sessions can contain multiple tasks, and each task can have sub-tasks.
+    - Tasks should be goal-oriented, and the AI should be able to guide, suggest, and advise the student through these tasks.
+    - The AI should be able to handle both structured (e.g., quizzes) and unstructured (e.g., brainstorming) tasks.
+
+3. **Feedback and Iteration**:
+    - There should be a mechanism for students to provide feedback at the end of each session.
+    - The AI should be able to use this feedback to improve subsequent interactions.
+    - The feedback can also be used to adjust the expertise level of the student, if necessary.
+
+## Inititialzation and User Configuration
+
+- [INPUT] User profile --> dict(str: user_name, str: iUI_name, append as other inputs and processed outputs are created)
+    - [INPUT] Explain what you want to learn. --> str: subject_matter
+    - [PROCESS] Manager creates burndown list
+        - comprehensive list of granular tasks that will result in subject matter expertise
+        - each task is prioritized
+        - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
+          --> dict(str: task, enum: status (pending, complete)) : burndown_list
+    - [INPUT] How much time do you have right now?  --> user_availability
+    - [PROCESS] Agent creates praxis based on context:
+        - user time selection
+        - next item on "burn down list
+          --> str: user_praxis
