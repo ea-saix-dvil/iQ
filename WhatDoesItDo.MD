@@ -55,9 +55,9 @@ Let's get started.
 
 ## Inititialzation and User Configuration
 
-- [INPUT] User profile --> dict(str: user_name, str: iUI_name, append as other inputs and processed outputs are created)
+- [INPUT] User profile --> dict
     - [INPUT] Explain what you want to learn. --> str: subject_matter
-    - [PROCESS] Manager creates burndown list
+    - [PROCESS] Manager creates "burndown list"
         - comprehensive list of granular tasks that will result in subject matter expertise
         - each task is prioritized
         - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
@@ -67,3 +67,7 @@ Let's get started.
         - user time selection
         - next item on "burn down list
           --> str: user_praxis
+
+## The Utility of this approach
+
+- iQ is supported by "living infrastructure".  This template is a starting place from which we encourage the expansion of the prompt library and the tool set to further enhance your learning.  We encourage you to customize your Ikigai Quest so that you can more efficiently and effectively --> Choose your adventure, Learn, Build, and Succeed.  
