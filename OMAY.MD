@@ -55,24 +55,30 @@ Let's get started.
     - The AI should be able to use this feedback to improve subsequent interactions.
     - The feedback can also be used to adjust the expertise level of the student, if necessary.
 
-## Inititialzation and User Configuration
+## iQ's core commodoties
 
-- [INPUT] User profile --> dict{str: user_name, list[str]: expertise_level, list[str]: learning_depth, list[int]: time_in_minutes, list[str]: execute_tool, str: subject_matter}
+- [iQ: FACILITATES YOUR JOURNEY] iQ relies on infrastructure as code leveraging the following libraries to provide a seamless user experience
+  - Prompt Library: iQ helps to curate and maintain a library of customized CoT prompt to enhance and the user's journey
+  - Checkpoint Store: iQ saves checkpoints of the iQ_config.json after every tool execution
+  - Configuration specification: iQ_config.json
+- [iQ: REQUESTS YOUR INPUT] iQ assists the user in configuring their User profile --> dict{str: user_name, list[str]: expertise_level, list[str]: learning_depth, list[int]: time_in_minutes, list[str]: execute_tool, str: subject_matter}
   - user_name: your name
   - expertise_level: Where are you in your journey: beginning, middle, or nearing completion?
   - learning_depth: How much insight would you like your AI Collaboration Partner to provide: some, a bit more, a lot more?
   - time_in_minutes: How much time do you have right now?
   - execute_tool: What would you like to do: Initialize your instruction, Begin a lesson, Conclude a lesson, Configure your User Profile
   - subject_matter: What do you want to learn? 
-- [PROCESS] Manager creates "burndown list"
-    - comprehensive list of granular tasks that will result in subject-matter expertise
-    - each task is prioritized
-    - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
-      --> dict(str: task, enum: status (pending, complete)) : burndown_list
-- [PROCESS] Agent creates praxis based on context:
-    - User Profile
-    - Next item on "burn down list
-      --> dict(str: task, str: instruction, reinforcement, synehtis output) : praxis
+- [Iq: PROCESSES YOUR INPUT] 
+  - iQ creates a "burndown list"
+      - comprehensive list of granular tasks that will result in subject-matter expertise
+      - each task is prioritized
+      - tasks with equivalent priority must be perfectly modular in that their position on the burndown list is interchangeable, i.e. at each specific priority level, the items on the list need not be adapted in a prescribed order.  This interchangeability should be reflective of different amounts of time, i.e. tasks that take 5, 10, 15, 30, 45, 60 minutes to complete but never exceeding 60 minutes.
+        --> dict(str: task, enum: status (pending, complete)) : burndown_list
+  - iQ creates praxis based on context:
+      - User Profile
+      - Next item on "burn down list
+        --> dict(str: task, str: instruction, reinforcement, synehtis output) : praxis
+
 
 ## The Utility of this approach
 
